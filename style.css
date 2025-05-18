@@ -1,0 +1,54 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.body{
+  min-height: 100vh;
+  min-width: 100vh;
+  background: url("img/snakeBG.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#scoreBox{
+  position: absolute;
+  top: 9px;
+  right: 350px;
+  font-size: 39px;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#board{
+  height: 90vmin;
+  width: 92vmin;  
+  position: relative;
+  transform: translateY(40px);
+  margin-left: 40px;
+  background: linear-gradient(rgb(231, 175, 175),rgb(86, 193, 86));
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+  background: linear-gradient(rgb(172, 91, 91),rgb(209, 209, 94));
+  border: 2px solid rgb(58, 5, 58);
+  transform: scale(1.02);
+  border-radius: 9px;
+}
+
+.snake{
+  background-color: purple;
+  border: .25vmin solid white;
+  border-radius: 12px;
+}
+
+.food{
+  background: linear-gradient(red,purple);
+  border: .25vmin solid black;
+  border-radius: 8px;
+}
